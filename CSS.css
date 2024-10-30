@@ -44,7 +44,7 @@ p {
   grid-template-columns: 10% 80% 10%;
   align-items: center;
   width: 92%;
-  margin: 4%;
+  padding: 4%;
 }
 .info p {
   margin: 0rem;

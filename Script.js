@@ -41,7 +41,7 @@ Btn.addEventListener('click', () => {
 
             area.style.background = 'hsl(217, 19%, 35%)';
             area.style.margin = '0%';
-            area.style.padding = '2.5% 4%'
+            area.style.padding = '4%'
             area.style.width = '92%';
             area.style.display = 'grid';
             area.style.borderRadius = '0rem 0rem 1rem 1rem';
@@ -80,12 +80,10 @@ Btn.addEventListener('click', () => {
             Btn.style.background = 'hsl(210, 46%, 95%)';
 
             area.style.background = 'white'; 
-            area.style.margin = '1.5rem'
-            area.style.margin = '4%';
+            area.style.padding = '4%';
             area.style.width = '92%';
-            area.style.borderRadius = '0rem 0rem 0rem 0rem';
+            area.style.borderRadius = '0rem 0rem 1rem 1rem';
             area.style.gridTemplateColumns='15% 70% 15%';
-            area.style.padding = '0% 0%';
             area.style.justifyItems =  'left';
             area.style.letterSpacing = '0';
 
