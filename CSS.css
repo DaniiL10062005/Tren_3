@@ -12,11 +12,13 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: hsl(217, 19%, 35%);
+  margin: 1.5rem;
 }
 p {
   font-size: 13px;
   font-weight: 500;
   color: hsl(214, 17%, 51%);
+  margin: 1.5rem;
 }
 
 .container {
@@ -35,13 +37,14 @@ p {
 .row {
   border-radius: 0rem 1rem 1rem 0rem;
   background-color: white;
-  padding: 1.5rem;
 }
 
 .info {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   align-items: center;
+  width: 92%;
+  margin: 4%;
 }
 .info p {
   margin: 0rem;
@@ -50,7 +53,7 @@ p {
   padding-inline: 0.5rem;
 }
 
-.info button {
+.share {
   color: hsl(217, 19%, 35%);
   padding: 0rem;
   text-align: left;
@@ -59,11 +62,11 @@ p {
   height: 100%;
   width: 100%;
   border: none;
-}
 
-.share {
   width: 85%;
   height: 85%;
+
+  position: relative;
 
   border-radius: 10rem;
   background-color: hsl(210, 46%, 95%);
@@ -71,6 +74,7 @@ p {
   display: grid;
   align-items: center;
   justify-items: center;
+  order: 4;
 }
 
 .share img {
@@ -80,6 +84,39 @@ p {
 .avatar {
   border-radius: 10rem;
   width: 100%;
+}
+.share-images {
+  display: none;
+
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 0.5rem;
+
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-items: center;
+
+  height: 4rem;
+  width: 15rem;
+
+  position: absolute;
+}
+.share-images p {
+  letter-spacing: 0.4rem;
+}
+.share-images::after {
+  content: "";
+  position: absolute;
+
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1rem solid hsl(217, 19%, 35%);
 }
 
 @media (max-width: 769px) {
@@ -96,10 +133,6 @@ p {
   .info {
     grid-template-columns: 15% 70% 15%;
     margin-top: 1.5rem;
-  }
-  .share-images {
-    display: grid;
-    grid-template-columns: auto auto auto;
   }
   .head {
     font-size: 18px;
