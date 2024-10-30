@@ -25,7 +25,7 @@ Btn.addEventListener('click', () => {
             shareContainer.style.left = `${coordOfBtn.left + coordOfBtn.width/2 - coordOfContainer.width/2}px`;
             shareContainer.style.top = `${coordOfBtn.top - coordOfContainer.height*1.3 }px`
     
-            Btn.style.background = 'hsl(217, 19%, 35%)';
+            Btn.style.background = 'hsl(214, 17%, 51%)';
     
             imgShare.setAttribute('fill','hsl(210, 46%, 95%)');
     
